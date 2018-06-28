@@ -25,6 +25,30 @@ botonInicio.addEventListener("click", () =>{
     pantalla1.style = "display:none;";
 });
 
+const saldoBoton = document.getElementById("verSaldoBoton");
+
+saldoBoton.addEventListener("click", () => {
+
+    var url = new URL('http://www.psep.cl/api/Bip.php?&numberBip=')
+    var params = {"N&ordm; tarjeta bip!":35696233} 
+    
+    url.search = new URLSearchParams(params)
+    
+    fetch(url)
+
+    let cardNumber = document.getElementById("textarea1").value;
+    document.getElementById("textarea1").value = "";
+    let precioPart = document.getElementById("precio");
+    const contenedor = document.createElement("h1");
+    let textSaldo = document.createTextNode(cardNumber);
+    contenedor.appendChild(textSaldo);
+    precioPart.appendChild(contenedor);
+
+
+
+
+})
+
 
 
 

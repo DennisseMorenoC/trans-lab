@@ -70,17 +70,26 @@ a{
 .verSaldo{
     background-color: rgba(255, 255, 255, 0.747);
 }
-.pantallaTres{
-    padding-top: 25%;
+.calcularTarifa{
+    background-color: rgba(255, 255, 255, 0.747);
+}
+.perfil{
+    background-color: rgba(255, 255, 255, 0.747);
+}
+.preguntasFrecuentes{
+    background-color: rgba(255, 255, 255, 0.747);
 }
 .pantallaTres{
+    padding-top: 25%;
     text-align: center;
 }
 #textarea1{
     width: 70%;
     font-family: 'Roboto', sans-serif;
+    margin-top: 7%;
 }
 #textarea1Lavel{
+    margin-top: 7%;
     margin-left: 50px;
 }
 #desplegableTarjetas{
@@ -89,5 +98,32 @@ a{
 }
 #verSaldoBoton{
     margin-top: 10%;
+    padding-bottom: 10%;
 }
+.card{
+    padding-top: 6%;
+    height: 150px;
+    width: 90%;
+    margin-left: 13px;
+}
+.emergenteSaldoTitulo{
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0.747);
+}
+.emergenteSaldoCont{
+    padding-top: 18px;
+    font-size: 40px;
+    color: white;
+}
+#relleno{
+    height: 40px;
+}
+.pantallaCuatro{
+    text-align: center;
+}
+#personPin{
+    size: 50%;
+}
+
 /* YeyeYeee código aquí */
