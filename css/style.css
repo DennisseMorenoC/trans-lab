@@ -1,1 +1,72 @@
+body{
+    background-color: rgb(146, 134, 196);
+}
+header{
+    text-align: center;
+}
+img{
+    padding-top: 17%;
+    width: 30%;
+    padding-bottom: 0.5px;
+}
+h1{
+    font-family: 'Amatic SC', cursive;
+    color: white;
+}
+.inputUsuario{
+    text-align: center;
+}
+i{
+    color: rgba(255, 255, 255, 0.747);
+}
+#botonInicio{
+    padding-bottom: 4%;
+}
+#olvidoContraseña{
+    color:  rgba(255, 255, 255, 0.747);
+    font-family: 'Roboto', sans-serif;
+}
+#registroCuenta{
+    font-family: 'Roboto', sans-serif;
+    padding-top: 5%;
+}
+#registrate{
+    color:  white;
+    font-weight: bold;
+}
+#cuenta{
+    color:  rgba(255, 255, 255, 0.747);
+}
+nav{
+    background-color: rgb(146, 134, 196);
+}
+.brand-logo{
+    text-align: center;
+}
+.brand-logo{
+    font-family: 'Amatic SC', cursive;
+    font-weight: bold;
+}
+.opcionesApp{
+    background-color: rgba(255, 255, 255, 0.747);
+}
+.pantallaDos{
+    padding-top: 60%;
+    text-align: center;
+}
+
+a{
+    width: 80%;
+    padding-bottom: 2%;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+.btn{
+    height: 40px;
+    margin-bottom: 20px;
+}
+#tapando{
+    height: 120px;
+}
+
 /* YeyeYeee código aquí */
