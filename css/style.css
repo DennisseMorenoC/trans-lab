@@ -54,7 +54,6 @@ nav{
     padding-top: 60%;
     text-align: center;
 }
-
 a{
     width: 80%;
     padding-bottom: 2%;
@@ -68,5 +67,27 @@ a{
 #tapando{
     height: 120px;
 }
-
+.verSaldo{
+    background-color: rgba(255, 255, 255, 0.747);
+}
+.pantallaTres{
+    padding-top: 25%;
+}
+.pantallaTres{
+    text-align: center;
+}
+#textarea1{
+    width: 70%;
+    font-family: 'Roboto', sans-serif;
+}
+#textarea1Lavel{
+    margin-left: 50px;
+}
+#desplegableTarjetas{
+    width: 70%;
+    margin-top: 20px;
+}
+#verSaldoBoton{
+    margin-top: 10%;
+}
 /* YeyeYeee código aquí */

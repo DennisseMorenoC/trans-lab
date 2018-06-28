@@ -1,18 +1,34 @@
 
-document.addEventListener('pantallaDos', function() {
+/*document.addEventListener('pantallaDos', function() {
     let elems = document.querySelectorAll('.sidenav-trigger');
     var instance = M.Sidenav.getInstance(elems);
     instance.open();
+});*/
+const botonInicio = document.getElementById("botonInicio2");
+
+botonInicio.addEventListener("click", () =>{
+    let email = document.getElementById("icon_prefix").value;
+    let password = document.getElementById("icon_telephone").value;
+    const caracters = /\S+@\S+\.\S+/;
+    if(email === "" || password === ""){
+        alert("Tiene campos vacios");
+    }else if(caracters.test(email)){
+        alert("Ingrese email válido");
+    }else if(isNaN(password)){
+        alert("Las contraseñas solo deben tener números")
+    }else if(password.length > 8){
+        alert("Su contraseña debe tener menos de ocho caractéres");
+    }
+    let change = document.getElementById("opcionesApp");
+    change.style = "display: block;";
+    let pantalla1 = document.getElementById("pantallaUno1");
+    pantalla1.style = "display:none;";
 });
 
-/*let email = document.getElementById("icon_prefix");
-let password = document.getElementById("icon_password");
 
-if(email === "" && password === ""){
-    alert("Tiene campos vacios");
-}
 
-function validateEmail(email) {
+
+/*function validateEmail(email) {
 
     email.password.addEventListener("click", () =>{
 
