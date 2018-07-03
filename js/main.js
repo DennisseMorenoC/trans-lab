@@ -5,25 +5,36 @@
     instance.open();
 });*/
 const botonInicio = document.getElementById("botonInicio2");
+let email = "";
+let password = "";
 
 botonInicio.addEventListener("click", () =>{
     let email = document.getElementById("icon_prefix").value;
     let password = document.getElementById("icon_telephone").value;
-    const caracters = /\S+@\S+\.\S+/;
+    const caracters = /^(?!.*notiene)(?:[^<>()[\].,;:\s@"]+(\.[^<>()[\].,;:\s@"]+)*|"[^\n"]+")@(?:[^<>()[\].,;:\s@"]+\.)+[^<>()[\]\.,;:\s@"]{2,63}$/i;
+    let emailValido = caracters.test(email);
+    localStorage.setItem("email", JSON.stringify(email));
+    localStorage.setItem("password", JSON.stringify(password));
+    
     if(email === "" || password === ""){
         alert("Tiene campos vacios");
-    }else if(caracters.test(email)){
-        alert("Ingrese email válido");
     }else if(isNaN(password)){
         alert("Las contraseñas solo deben tener números")
     }else if(password.length > 8){
         alert("Su contraseña debe tener menos de ocho caractéres");
+    }else if (emailValido){
+        let change = document.getElementById("opcionesApp");
+        window.location = "indexOpciones.html";
+        return true;
+    }else{
+        alert("Debe ingresar email valido");
+        return false;
     }
-    let change = document.getElementById("opcionesApp");
-    change.style = "display: block;";
-    let pantalla1 = document.getElementById("pantallaUno1");
-    pantalla1.style = "display:none;";
+    
 });
+
+
+
 
 const saldoBoton = document.getElementById("verSaldoBoton");
 

@@ -1,5 +1,6 @@
 body{
     background-color: rgb(146, 134, 196);
+
 }
 header{
     text-align: center;
@@ -8,6 +9,7 @@ img{
     padding-top: 17%;
     width: 30%;
     padding-bottom: 0.5px;
+
 }
 h1{
     font-family: 'Amatic SC', cursive;
